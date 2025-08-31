@@ -34,6 +34,13 @@ public class UserDaoImpl implements UserDao{
         t.commit();
         session.close();
     }
+    public void deleteAll() {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        Transaction t = session.beginTransaction();
+        session.createQuery("Delete From User").executeUpdate();
+        t.commit();
+        session.close();
+    }
 
     @Override
     public User findById(int id) {

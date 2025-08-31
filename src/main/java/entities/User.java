@@ -20,7 +20,6 @@ public class User {
     }
 
     public User() {
-
     }
 
     public int getId() {
@@ -50,7 +49,7 @@ public class User {
     @Override
     public String toString() {
         return " Пользователь{" +
-                "id=" + id +
+                " id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age + '\'' +
                 ", email=" + email + '\'' +
