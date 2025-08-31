@@ -16,7 +16,6 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest
-@AutoConfigureMockMvc
 @Testcontainers
 public class UserDaoIntegrTest {
 
